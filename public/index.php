@@ -6,16 +6,5 @@ require_once __DIR__ . '/../config/twig.php';
 
 $name = 'Wilder';
 
-echo $twig->render('home.html.twig', ['name' => $name]);
+echo $twig->render('Layout.html.twig', ['name' => $name]);
 
-
-$products = ['guitare', 'bass', 'bonjo', 'cithare', 'lyre', 'harpe'];
-
-
-echo $twig->render('home.html.twig', ['products' => $products]);
-
-foreach ($products as $product){
-     echo $product;
-}
-
-// Ouvrir le serveur ICI ! 
